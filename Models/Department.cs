@@ -21,6 +21,9 @@ public class Department
     public DateTime StartDate { get; set; }
 
     public int? InstructorID { get; set; }
+    
+    [Timestamp]
+    public byte[] ConcurrencyToken { get; set; }
 
     public Instructor Administrator { get; set; }
     
